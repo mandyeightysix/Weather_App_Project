@@ -12,41 +12,44 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <div class="row">
-          <div class="col-6">
-            <h1>Sudbury</h1>
-            <ul>
-              <li>Monday 02:00</li>
-              <li>Cloudy</li>
-              <li>Humidity: 83%, Wind: 5.66km/h</li>
-            </ul>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="row">
+            <div class="col-6">
+              <h1>Sudbury</h1>
+              <ul>
+                <li>Monday 02:00</li>
+                <li>
+                  Humidity: 83%, Wind: <br />
+                  5.66km/h
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                alt="Cloudy"
+              />
+              <span class="temperature">12</span>
+              <span class="unit">°C</span> | °F
+              <div>Cloudy</div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/252/252035.png"
-              alt="Cloudy"
-            />
-            <span class="temperature">12</span>
-            <span class="unit">°C</span>
-          </div>
-        </div>
+        <small>
+          <a
+            href="https://github.com/mandyeightysix/Weather_App_Project/commit/cc9eb9d44e14d6198117cbac51e1356e5bc107f2"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Amanda Pepin
+        </small>
       </div>
-      <small>
-        <a
-          href="https://github.com/mandyeightysix/Weather_App_Project/commit/cc9eb9d44e14d6198117cbac51e1356e5bc107f2"
-          target="_blank"
-          >Open-source code</a
-        >
-        by Amanda Pepin
-      </small>
     </div>
-    <script src="src/app.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
