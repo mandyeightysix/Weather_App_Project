@@ -28,7 +28,21 @@ li {
 .weather-app {
   padding: 20px;
   border: 1px solid #dadde1;
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: rgb(134, 199, 199);
   opacity: 0.5;
+}
+
+.weather-temperature img {
+  margin-right: 10px;
+  float: right;
+  display: block;
+}
+
+.clearfix {
+  font-size: 20px;
+}
+
+.weather-today {
+  padding-left: 10px;
 }
