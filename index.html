@@ -44,21 +44,23 @@
               <ul>
                 <li>
                   Monday 02:00,
-                  <span id="description">cloudy</span>
+                  <span id="description">Sunny</span>
                 </li>
-                <li class="humid">Humidity: 83%, Wind: 5.66km/h</li>
+                <li>
+                  Humidity: <span id="humidity"></span>%, Wind:
+                  <span id="wind"></span>Km/H
+                </li>
               </ul>
             </div>
             <div class="col-6">
               <div class="temperature-container d-flex justify-content-end">
+                <canvas width="52" height="52"></canvas>
                 <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-                  alt="Cloudy"
-                  width="52"
-                  height="52"
+                  class="weather-icon"
+                  alt="Sunny"
+                  src="//ssl.gstatic.com/onebox/weather/64/sunny.png"
+                  id="icon"
                 />
-              </div>
-              <div>
                 <span class="temp" id="temperature">12</span
                 ><span class="units">°C |°F</span>
               </div>

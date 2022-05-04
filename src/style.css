@@ -40,18 +40,12 @@ li {
   float: inline-start;
 }
 
-.clearfix {
-  box-sizing: border-box;
-  color: rgb(33, 33, 33);
-  display: inline;
-  font-size: 50px;
-  font-weight: 700;
-  height: auto;
-  line-height: 80px;
-  margin-left: 10px;
-  text-align: left;
-  text-size-adjust: 100%;
-  width: auto;
+.temp {
+  font-size: 48px;
+}
+
+.icon {
+  font-size: 40px;
 }
 
 .units {
@@ -61,7 +55,7 @@ li {
   font-size: 16px;
   font-weight: 400;
   height: auto;
-  line-height: 28px;
+  line-height: 88px;
   position: relative;
   text-align: left;
   text-size-adjust: 100%;
