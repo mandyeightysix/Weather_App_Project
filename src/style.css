@@ -18,6 +18,7 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-transform: capitalize;
 }
 
 .weather-app-wrapper {
@@ -33,16 +34,48 @@ li {
   opacity: 0.5;
 }
 
-.weather-temperature img {
-  margin-right: 10px;
+.temperature-container img {
   float: right;
-  display: block;
+  display: inline;
+  float: inline-start;
 }
 
 .clearfix {
-  font-size: 20px;
+  box-sizing: border-box;
+  color: rgb(33, 33, 33);
+  display: inline;
+  font-size: 50px;
+  font-weight: 700;
+  height: auto;
+  line-height: 80px;
+  margin-left: 10px;
+  text-align: left;
+  text-size-adjust: 100%;
+  width: auto;
 }
 
-.weather-today {
-  padding-left: 10px;
+.units {
+  box-sizing: border-box;
+  color: rgb(33, 33, 33);
+  display: inline;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+  line-height: 28px;
+  position: relative;
+  text-align: left;
+  text-size-adjust: 100%;
+  top: -22px;
+  width: auto;
+}
+
+.source-link {
+  color: rgb(134, 199, 199);
+  text-decoration: none;
+}
+
+.source-link :hover {
+  transition-timing-function: ease-in;
+  transition-duration: 2s;
+  transition-delay: 1s;
 }

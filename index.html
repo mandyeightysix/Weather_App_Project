@@ -18,33 +18,56 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type in location..."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn-btn-light w-80"
+                />
+              </div>
+            </div>
+          </form>
           <div class="row">
             <div class="col-6">
-              <h1>Sudbury</h1>
+              <h1 id="location"></h1>
               <ul>
-                <li>Monday 02:00</li>
-                <li>Cloudy</li>
+                <li>
+                  Monday 02:00,
+                  <span id="description">cloudy</span>
+                </li>
+                <li class="humid">Humidity: 83%, Wind: 5.66km/h</li>
               </ul>
             </div>
             <div class="col-6">
-              <div class="clearfix weather-tempertature">
+              <div class="temperature-container d-flex justify-content-end">
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
                   alt="Cloudy"
+                  width="52"
+                  height="52"
                 />
-                <span class="clearfix">12°C |°F</span>
               </div>
-              <ul>
-                <li>
-                  Humidity: 83%, Wind: <br />
-                  5.66km/h
-                </li>
-              </ul>
+              <div>
+                <span class="temp" id="temperature">12</span
+                ><span class="units">°C |°F</span>
+              </div>
             </div>
           </div>
         </div>
         <small>
           <a
+            class="source-link"
             href="https://github.com/mandyeightysix/Weather_App_Project/commit/cc9eb9d44e14d6198117cbac51e1356e5bc107f2"
             target="_blank"
             >Open-source code</a
