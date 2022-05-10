@@ -20,7 +20,7 @@
         <div class="weather-app">
           <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-9">
+              <div class="col-8">
                 <input
                   type="search"
                   placeholder="Type in location..."
@@ -29,11 +29,11 @@
                   autocomplete="off"
                 />
               </div>
-              <div class="col-3">
+              <div class="col-4">
                 <input
                   type="submit"
                   value="Search"
-                  class="btn-btn-light w-80"
+                  class="btn-btn-light w-99"
                 />
               </div>
             </div>
@@ -53,11 +53,18 @@
               </ul>
             </div>
             <div class="col-6">
-              <div class="temperature-container d-flex justify-content-end">
-                <canvas width="52" height="52"></canvas>
-                <img src="" alt="Sunny" id="icon" class="weather-icon" />
-                <span class="temp" id="temperature">12</span
-                ><span class="units">°C |°F</span>
+              <div class="weather-temperature">
+                <div class="temperature-container d-flex justify-content-end">
+                  <canvas width="52" height="52"></canvas>
+                  <img src="" alt="Sunny" id="icon" class="weather-icon" />
+                  <span class="temp" id="temperature">12</span
+                  ><span class="units"
+                    ><a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link" class="fah-link"
+                      >°F</a
+                    ></span
+                  >
+                </div>
               </div>
             </div>
           </div>

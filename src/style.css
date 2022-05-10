@@ -45,10 +45,12 @@ li::first-letter {
 
 .temp {
   font-size: 48px;
+  padding-top: 20px;
 }
 
 .icon {
   font-size: 25px;
+  line-height: 80px;
 }
 
 .units {
@@ -62,7 +64,7 @@ li::first-letter {
   position: relative;
   text-align: left;
   text-size-adjust: 100%;
-  top: -22px;
+  top: 1px;
   width: auto;
 }
 
@@ -75,4 +77,18 @@ li::first-letter {
   transition-timing-function: ease-in;
   transition-duration: 2s;
   transition-delay: 1s;
+}
+
+.fah-link {
+  text-decoration: none;
+}
+
+.weather-temperature .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
