@@ -7,6 +7,10 @@ h1 {
   font-size: 38px;
   font-weight: 900;
   line-height: 48px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: whitesmoke;
+  opacity: 2;
 }
 
 ul {
@@ -24,6 +28,10 @@ li::first-letter {
   text-transform: capitalize;
 }
 
+.description-date {
+  text-align: center;
+}
+
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
@@ -35,6 +43,10 @@ li::first-letter {
   border-radius: 4px;
   background-color: rgb(134, 199, 199);
   opacity: 0.5;
+}
+
+.temperature-container {
+  text-align: center;
 }
 
 .temperature-container img {
@@ -101,11 +113,11 @@ li::first-letter {
 
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .weather-forecast-temperature-min {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .weather-forecast-temperature {
