@@ -34,25 +34,31 @@
                 />
               </div>
               <div class="col-2">
-                <input class="btn btn-outline-light" type="submit" />
+                <div class="opacity-50">
+                  <input class="btn btn-outline-danger" type="submit" />
+                </div>
               </div>
               <div class="col-2">
-                <button
-                  id="geo-location"
-                  class="btn btn-outline-light"
-                  type="submit"
-                >
-                  <i class="fa-solid fa-location-arrow"></i>
-                </button>
+                <div class="opacity-50">
+                  <button
+                    id="geo-location"
+                    class="btn btn-outline-danger"
+                    type="submit"
+                  >
+                    <i class="fa-solid fa-location-arrow"></i>
+                  </button>
+                </div>
               </div>
             </div>
           </form>
           <div class="row">
             <div class="col-12">
-              <h1 id="location"></h1>
+              <div class="opacity-50">
+                <h1 id="location"></h1>
+              </div>
             </div>
             <div class="row">
-              <div class="col-12">
+              <div class="col-9">
                 <div class="weather-temperature">
                   <div class="temperature-container d-flex justify-content-end">
                     <canvas width="52" height="52"></canvas>
@@ -87,11 +93,13 @@
           </div>
           <br />
           <iframe
-            src="https://openweathermap.org/weathermap?basemap=map&cities=true&layer=windspeed&lat=51.2538&lon=85.3232&zoom=5"
+            src="https://openweathermap.org/weathermap?basemap=map&cities=true&layer=windspeed&lat=39.1834&lon=-84.5333&zoom=5"
             width="100%"
             height="790px"
             frameborder="0"
             style="border: 0"
+            autocomplete="off"
+            id="weather-map"
           ></iframe>
           <a href="" target="_blank"></a>
         </div>

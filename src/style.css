@@ -9,7 +9,7 @@ h1 {
   line-height: 48px;
   margin: 0 auto;
   text-align: center;
-  background-color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0);
   opacity: 2;
 }
 
@@ -30,6 +30,8 @@ li::first-letter {
 
 .description-date {
   text-align: center;
+  color: rgb(89, 86, 86);
+  opacity: 0.8;
 }
 
 .weather-app-wrapper {
@@ -41,8 +43,11 @@ li::first-letter {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 4px;
-  background-color: rgb(134, 199, 199);
-  opacity: 0.5;
+  background: linear-gradient(
+    135deg,
+    rgb(255, 168, 168) 10%,
+    rgb(252, 255, 0) 100%
+  );
 }
 
 .temperature-container {
@@ -58,6 +63,8 @@ li::first-letter {
 .temp {
   font-size: 48px;
   padding-top: 20px;
+  color: rgb(89, 86, 86);
+  opacity: 0.5;
 }
 
 .icon {
@@ -67,7 +74,7 @@ li::first-letter {
 
 .units {
   box-sizing: border-box;
-  color: rgb(33, 33, 33);
+  color: rgb(89, 86, 86);
   display: inline;
   font-size: 16px;
   font-weight: 400;
@@ -78,10 +85,11 @@ li::first-letter {
   text-size-adjust: 100%;
   top: 1px;
   width: auto;
+  opacity: 0.5;
 }
 
 .source-link {
-  color: rgb(134, 199, 199);
+  color: #fd8852;
   text-decoration: none;
 }
 
@@ -96,7 +104,7 @@ li::first-letter {
 }
 
 .weather-temperature .active {
-  color: black;
+  color: rgb(89, 86, 86);
   cursor: default;
   text-decoration: none;
 }
