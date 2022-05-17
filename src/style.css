@@ -1,5 +1,5 @@
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Radio Canada", sans-serif;
 }
 
 h1 {
@@ -76,7 +76,7 @@ li::first-letter {
   box-sizing: border-box;
   color: rgb(89, 86, 86);
   display: inline;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   height: auto;
   line-height: 88px;
