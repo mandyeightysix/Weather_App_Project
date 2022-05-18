@@ -141,7 +141,7 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-search("Hamilton");
+search("Greater Sudbury");
 
 function searchCurrentLocation(position) {
   let apiKey = "21d20dbb06095f793410f891f00e7748";

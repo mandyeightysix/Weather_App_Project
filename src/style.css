@@ -100,6 +100,17 @@ li::first-letter {
   transition-delay: 1s;
 }
 
+.host-link {
+  color: #fd8852;
+  text-decoration: none;
+}
+
+.host-link :hover {
+  transition-timing-function: ease-in;
+  transition-duration: 2s;
+  transition-delay: 1s;
+}
+
 .fah-link {
   text-decoration: none;
 }
