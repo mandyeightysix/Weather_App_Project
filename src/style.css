@@ -86,6 +86,7 @@ li::first-letter {
   top: 1px;
   width: auto;
   opacity: 0.5;
+  text-decoration: none;
 }
 
 .source-link {

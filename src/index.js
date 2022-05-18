@@ -130,23 +130,6 @@ function displayCelsiusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
-function showPosition(position) {
-  let h1 = document.querySelector("h1");
-  h1.innerHTML = `${position}`;
-  let apiKey = "21d20dbb06095f793410f891f00e7748";
-  let apiUrl = `http://api.openweathermap.org/geo/1.0/reverse?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}`;
-  axios.get(apiUrl).then(displayCity);
-}
-
-function getCurrentPosition() {
-  navigator.geolocation.getCurrentPosition(showPosition);
-}
-
-navigator.geolocation.getCurrentPosition(showPosition);
-
-let geoLocation = document.querySelector("#geo-location");
-geoLocation.addEventListener("click", getCurrentPosition);
-
 let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
@@ -159,3 +142,16 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Hamilton");
+
+function searchCurrentLocation(position) {
+  let apiKey = "21d20dbb06095f793410f891f00e7748";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+function getMyLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchCurrentLocation);
+}
+
+let locationButton = document.querySelector("#geo-location");
+locationButton.addEventListener("click", getMyLocation);
