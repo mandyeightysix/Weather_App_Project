@@ -86,7 +86,6 @@ li::first-letter {
   top: 1px;
   width: auto;
   opacity: 0.5;
-  text-decoration: none;
 }
 
 .source-link {
@@ -111,18 +110,21 @@ li::first-letter {
   transition-delay: 1s;
 }
 
-.fah-link {
+a:link {
   text-decoration: none;
-}
-
-.weather-temperature .active {
   color: rgb(89, 86, 86);
-  cursor: default;
-  text-decoration: none;
 }
-
-.weather-temperature .active:hover {
+a:visited {
   text-decoration: none;
+  color: rgb(89, 86, 86);
+}
+a:hover {
+  text-decoration: none;
+  color: rgb(89, 86, 86);
+}
+a:active {
+  text-decoration: none;
+  color: rgb(89, 86, 86);
 }
 
 .weather-forecast {
