@@ -28,6 +28,19 @@ li::first-letter {
   text-transform: capitalize;
 }
 
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
 .description-date {
   text-align: center;
   color: rgb(89, 86, 86);
@@ -99,19 +112,6 @@ li::first-letter {
   transition-delay: 1s;
 }
 
-a:link {
-  text-decoration: none;
-}
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-a:active {
-  text-decoration: none;
-}
-
 .host-link {
   color: #fd8852;
   text-decoration: none;
@@ -132,12 +132,14 @@ a:active {
 .weather-forecast-date {
   font-size: 16px;
   opacity: 0.6;
+  color: rgb(89, 86, 86);
 }
 
 .weather-forecast-temperature-min {
   opacity: 0.6;
 }
 
-.weather-forecast-temperature {
-  font-size: 13px;
+.weather-forecast-temperatures {
+  font-size: 18px;
+  color: rgb(89, 86, 86);
 }
