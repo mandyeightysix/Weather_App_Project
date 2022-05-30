@@ -101,6 +101,27 @@ a:active {
   opacity: 0.5;
 }
 
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgba(81, 67, 67, 0.125);
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.6;
+  color: rgb(89, 86, 86);
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+}
+
+.weather-forecast-temperatures {
+  font-size: 18px;
+  color: rgb(89, 86, 86);
+}
+
 .source-link {
   color: #fd8852;
   text-decoration: none;
@@ -121,25 +142,4 @@ a:active {
   transition-timing-function: ease-in;
   transition-duration: 2s;
   transition-delay: 1s;
-}
-
-.weather-forecast {
-  margin-top: 20px;
-  text-align: center;
-  background-color: rgba(81, 67, 67, 0.125);
-}
-
-.weather-forecast-date {
-  font-size: 16px;
-  opacity: 0.6;
-  color: rgb(89, 86, 86);
-}
-
-.weather-forecast-temperature-min {
-  opacity: 0.6;
-}
-
-.weather-forecast-temperatures {
-  font-size: 18px;
-  color: rgb(89, 86, 86);
 }
