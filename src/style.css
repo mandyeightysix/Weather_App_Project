@@ -126,7 +126,7 @@ a:active {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  color: whitesmoke;
+  background-color: rgba(81, 67, 67, 0.125);
 }
 
 .weather-forecast-date {
