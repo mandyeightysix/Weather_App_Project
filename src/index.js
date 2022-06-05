@@ -139,8 +139,6 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-search("Hamilton");
-
 function searchCurrentLocation(position) {
   let apiKey = "21d20dbb06095f793410f891f00e7748";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
@@ -153,3 +151,43 @@ function getMyLocation(event) {
 
 let locationButton = document.querySelector("#geo-location");
 locationButton.addEventListener("click", getMyLocation);
+
+function searchCity(city) {
+  let apiKey = "21d20dbb06095f793410f891f00e7748";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric`;
+  axios.get(`${apiUrl}&appid=${apiKey}`).then(displayTemperature);
+}
+
+function displayVancouverTemperature(event) {
+  event.preventDefault();
+  searchCity("Vancouver");
+}
+
+function displaySaskatoonTemperature(event) {
+  event.preventDefault();
+  searchCity("Saskatoon");
+}
+
+function displayMontrealTemperature(event) {
+  event.preventDefault();
+  searchCity("Montreal");
+}
+
+function displayHalifaxTemperature(event) {
+  event.preventDefault();
+  searchCity("Halifax");
+}
+
+let vancouver = document.querySelector("#vancouver");
+vancouver.addEventListener("click", displayVancouverTemperature);
+
+let saskatoon = document.querySelector("#saskatoon");
+saskatoon.addEventListener("click", displaySaskatoonTemperature);
+
+let montreal = document.querySelector("#montreal");
+montreal.addEventListener("click", displayMontrealTemperature);
+
+let halifax = document.querySelector("#halifax");
+halifax.addEventListener("click", displayHalifaxTemperature);
+
+search("Hamilton");
